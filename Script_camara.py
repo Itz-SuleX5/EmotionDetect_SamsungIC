@@ -13,7 +13,7 @@ EMOCIONES_ESPAÑOL = ['diversión', 'emocion', 'enojo', 'miedo', 'tristeza', 'sa
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Cargar el modelo entrenado
-def cargar_modelo(ruta_modelo='modelo_emociones_001.h5'):
+def cargar_modelo(ruta_modelo='mejor_modelo_emociones.h5'):
     try:
         modelo = load_model(ruta_modelo)
         print(f"Modelo cargado correctamente desde {ruta_modelo}")
